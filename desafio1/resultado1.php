@@ -10,10 +10,10 @@
 
 <body>
     <main>
-       
+        <h1> RESULTADO FINAL</h1>";
         <p>
             <?php
-            echo "<h1> RESULTADO FINAL</h1>";
+
             $numero = $_GET['numero'];
             $ant = $numero - 1;
             $suc = $numero + 1;
@@ -28,8 +28,7 @@
             echo "A raiz quadrada de $numero é $raiz <br>";
             ?>
         </p>
-        <input type="button" value="Voltar" onclick="window.location.href='/desafio1/index.html'">
-      
+        <button onclick="javascript:history.go(-1)">&#x2B05; Voltar</button>
     </main>
 
 </body>
