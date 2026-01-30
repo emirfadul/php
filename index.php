@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1>Curso PHP - Gustavo Guanabara</h1>
+        <h1>Curso PHP do Prof. Gustavo Guanabara</h1>
     </header>
 
     <div class="cards-container">
@@ -22,7 +22,7 @@
             <div class="card-content">
                 <a href="/desafio10/index.php">
                     <button class="card-button">DESAFIO 10</button>
-                    _ </a>
+                </a>
             </div>
         </div>
 
