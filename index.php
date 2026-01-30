@@ -10,8 +10,12 @@
 
 <body>
     <header>
-        <h1>Curso PHP do Prof. Gustavo Guanabara</h1>
+        <h1>Curso PHP</h1>
     </header>
+
+    <?php
+    //include 'style.css';
+    ?>
 
     <div class="cards-container">
 
