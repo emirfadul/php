@@ -49,9 +49,10 @@ footer {
     padding: 5px;
 }
 
-p {
+.cards-container p {
     text-align: justify;
     line-height: 1.5em;
+    color:aliceblue
 }
 
 h2, h3, h4 {
@@ -234,7 +235,7 @@ input[type=radio] + label, input[type=checkbox] + label {
     margin: 20px 0;
 }
 
-.cards-container .card-content .h2    {
+.cards-container .card-content .h2  {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 0px black;
