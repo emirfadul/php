@@ -117,15 +117,44 @@
 //
 //var_dump($data) ;
 
+// **********
+//(string);
+//(boolean);
+//(float);
+//(integer);
+//(double);
+//(object);
+
+
 //$person = ['name' => 'emir', 'age' => 35, 'documents' => ['cpf' => '123456789', 'rg' => '123456789', 'array' => ['sao paulo', 'flamengo']]];
 //
 //var_dump($person['document']['array']);
 
-$nome = ["emir"];
+//******* Transformar a variavel
 
-$mudanca = (object) $nome;
+//$nome = ["emir"];
+//
+//$mudanca = (object) $nome;
+//
+//var_dump($mudanca);
 
-var_dump($mudanca);
+
+//********** Looping FOR ********
+//$names5 = ['Alexandre', 'joao', 'carlos'];
+//
+//for($i = 0; $i < count($names5); $i++){
+//    echo $names5[$i] . "<br>";
+//}
+//
+//******** LOOPING WHILE ************
+
+$names6 = ['Alexandre', 'joao', 'carlos'];
+$i = 0;
+
+while($i < count($names6)){
+    echo $names6[$i] . "<br>";
+    $i++;
+}
 
 ?>
 
