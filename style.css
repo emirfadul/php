@@ -199,10 +199,10 @@ input[type=reset]:hover {
     background-color: #c27013;
 }
 
-input[type=button], button {
-    width: 100%;
+input[type=button], button .card-button {
+    width: 30%;
     background-color: #372991;
-    font-size: 1em;
+    font-size: 0.5em;
     color: white;
     padding: 10px 20px;
     margin: 5px 0;
