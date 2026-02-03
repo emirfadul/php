@@ -14,53 +14,58 @@
     </header>
 
     <div class="cards-container">
+        <form action="login.php" method="POST">
+            <input type="text" name="usuario" placeholder="Usuário" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
 
-        <!-- Card Individual -->
-        <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-
-            <div class="card-content">
-                <a href="/desafio10/index.php">
-                    <button class="card-button">DESAFIO 10</button>
-                </a>                
-            </div>
-            <p>Calculando sua idade.</p>
-        </div>
-
-        <!-- Card Individual -->
-        <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-
-            <div class="card-content">
-                <a href="desafio11/index.php">
-                    <button class="card-button">DESAFIO 11</button>
-                </a>                
-            </div>
-            <p>Reajuste de preço.</p>
-        </div>
-
-        <!-- Card Individual -->
-        <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-
-            <div class="card-content">
-                <a href="desafio12/index.php">
-                    <button class="card-button">DESAFIO 12</button>
-                </a>                
-            </div>
-            <p>Calculando de Tempo.</p>
-        </div>
-
-        <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-
-            <div class="card-content">
-                <a href="desafio13/index.php">
-                    <button class="card-button">DESAFIO 13</button>
-                </a>                
-            </div>
-            <p>Calculando sua idade.</p>
-        </div>
+<!--         Card Individual -->-->
+<!--        <div class="card">-->
+<!--            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">-->
+<!---->
+<!--            <div class="card-content">-->
+<!--                <a href="/desafio10/index.php">-->
+<!--                    <button class="card-button">DESAFIO 10</button>-->
+<!--                </a>                -->
+<!--            </div>-->
+<!--            <p>Calculando sua idade.</p>-->
+<!--        </div>-->
+<!---->
+<!--        Card Individual -->-->
+<!--        <div class="card">-->
+<!--            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">-->
+<!---->
+<!--            <div class="card-content">-->
+<!--                <a href="desafio11/index.php">-->
+<!--                    <button class="card-button">DESAFIO 11</button>-->
+<!--                </a>                -->
+<!--            </div>-->
+<!--            <p>Reajuste de preço.</p>-->
+<!--        </div>-->
+<!---->
+<!--       Card Individual -->-->
+<!--        <div class="card">-->
+<!--            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">-->
+<!---->
+<!--            <div class="card-content">-->
+<!--                <a href="desafio12/index.php">-->
+<!--                    <button class="card-button">DESAFIO 12</button>-->
+<!--                </a>                -->
+<!--            </div>-->
+<!--            <p>Calculando de Tempo.</p>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="card">-->
+<!--            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">-->
+<!---->
+<!--            <div class="card-content">-->
+<!--                <a href="desafio13/index.php">-->
+<!--                    <button class="card-button">DESAFIO 13</button>-->
+<!--                </a>                -->
+<!--            </div>-->
+<!--            <p>Calculando sua idade.</p>-->
+<!--        </div>-->
 
     </div>
 
