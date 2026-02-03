@@ -22,9 +22,10 @@
             <div class="card-content">
                 <a href="/desafio10/index.php">
                     <button class="card-button">DESAFIO 10</button>
-                </a>                
+                </a>
+                <p>Calculando sua idade.</p>
             </div>
-            <p>Calculando sua idade.</p>
+
         </div>
 
         <!-- Card Individual -->
@@ -34,9 +35,10 @@
             <div class="card-content">
                 <a href="desafio11/index.php">
                     <button class="card-button">DESAFIO 11</button>
-                </a>                
+                </a>
+                <p>Reajuste de preço.</p>
             </div>
-            <p>Reajuste de preço.</p>
+
         </div>
 
         <!-- Card Individual -->
@@ -46,9 +48,10 @@
             <div class="card-content">
                 <a href="desafio12/index.php">
                     <button class="card-button">DESAFIO 12</button>
-                </a>                
+                </a>
+                <p>Calculando de Tempo.</p>
             </div>
-            <p>Calculando de Tempo.</p>
+
         </div>
 
         <div class="card">
@@ -57,10 +60,14 @@
             <div class="card-content">
                 <a href="desafio13/index.php">
                     <button class="card-button">DESAFIO 13</button>
-                </a>                
+                </a>
+                <p>Calculando sua idade.</p>
             </div>
-            <p>Calculando sua idade.</p>
+
         </div>
+
+        <button class="card-content" onclick="history.back()">Voltar</button>
+
 
     </div>
 

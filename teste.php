@@ -148,13 +148,30 @@
 //
 //******** LOOPING WHILE ************
 
-$names6 = ['Alexandre', 'joao', 'carlos'];
-$i = 0;
+//$names6 = ['Alexandre', 'joao', 'carlos'];
+//$i = 0;
+//
+//while($i < count($names6)){
+//    echo $names6[$i] . "<br>";
+//    $i++;
+//}
+// ============ FUNCTIONS ========
 
-while($i < count($names6)){
-    echo $names6[$i] . "<br>";
-    $i++;
+function connection(){
+    $pdo = new PDO('mysql:host=localhost;dbname=books', 'root', '');
+    return $pdo;
 }
+
+function getData(){
+    $connection = connection();
+    $query = $connection->query("SELECT * FROM USER");
+    $query->execute();
+    return $query->fetchAll();
+}
+
+getData();
+
+
 
 ?>
 

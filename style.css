@@ -60,6 +60,12 @@ h2, h3, h4 {
     margin: 0 0 10px 0;
 }
 
+p {
+    color: #e3e2ea;
+    margin: 0 0 10px 0;
+
+}
+
 a {
     color: #15142b;
     background-color: rgba(55, 41, 145, 0.1);
