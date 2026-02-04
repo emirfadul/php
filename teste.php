@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Teste PHP</h1>
+<h1>Teste PHP</h1>
 
 
 <?php
@@ -157,20 +157,36 @@
 //}
 // ============ FUNCTIONS ========
 
-function connection(){
-    $pdo = new PDO('mysql:host=localhost;dbname=books', 'root', '');
-    return $pdo;
+//function connection(){
+//    $pdo = new PDO('mysql:host=localhost;dbname=books', 'root', '');
+//    return $pdo;
+//}
+//
+//function getData($table){
+//    $connection = connection();
+//    $query = $connection->query("SELECT * FROM {$table}");
+//    $query->execute();
+//    return $query->fetchAll();
+//}
+//
+//var_dump(getData('users')) ;
+//
+
+class Person
+{
+    public function __invoke()
+    {
+        return 'teste';
+    }
+
+
 }
 
-function getData(){
-    $connection = connection();
-    $query = $connection->query("SELECT * FROM USER");
-    $query->execute();
-    return $query->fetchAll();
-}
+$person
 
-getData();
+};
 
+var_dump($person);
 
 
 ?>

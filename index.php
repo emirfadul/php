@@ -21,8 +21,7 @@
         </form>
     </div>
 
-<<<<<<< HEAD
-=======
+
 </div>
 
 <?php
@@ -36,60 +35,13 @@
         $usuario = $_POST['usuario'];
         $senha = $_POST['senha'];
 
-        // EXEMPLO SIMPLES (Em um sistema real, você consultaria o Banco de Dados)
         $usuario_correto = "emirfadul";
         $senha_correta = "021205";
 
     if ($usuario_correto == $usuario && $senha_correta == $senha) {
         echo 'emir';
-        header("Location: cursos.html");
+        header("Location: conteudo.html");
         exit;
-
-//        echo '<div class="Card Individual">
-//                <div class="card">
-//                    <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-//
-//                    <div class="card-content">
-//                        <a href="/desafio10/index.php">
-//                            <button class="card-button">DESAFIO 10</button>
-//                        </a>
-//                    </div>
-//                </div>
-//
-//                <!-- Card Individual -->
-//                <div class="card">
-//                    <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-//
-//                    <div class="card-content">
-//                        <a href="desafio11/index.php">
-//                            <button class="card-button">DESAFIO 11</button>
-//                        </a>
-//                    </div>
-//                </div>
-//
-//                <!-- Card Individual -->
-//                <div class="card">
-//                    <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-//
-//                    <div class="card-content">
-//                        <a href="desafio12/index.php">
-//                            <button class="card-button">DESAFIO 12</button>
-//                        </a>
-//                    </div>
-//                </div>
-//
-//                <div class="card">
-//                    <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
-//
-//                    <div class="card-content">
-//                        <a href="desafio13/index.php">
-//                            <button class="card-button">DESAFIO 13</button>
-//                        </a>
-//                    </div>
-//                </div>
-//
-//            </div>';
-
     } else {
         // Erro: Redireciona de volta com uma mensagem
         echo "Usuário ou senha inválidos!";
@@ -97,7 +49,7 @@
     }
 ?>
 
->>>>>>> 5fb21ea (acrescentei o botao voltar e coloquei em outro arquivo os cursos.)
+
 </body>
 
 </html>

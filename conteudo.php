@@ -66,7 +66,7 @@
 
         </div>
 
-        <button class="card-content" onclick="history.back()">Voltar</button>
+        <button class="card-button" onclick="history.back()">Voltar</button>
 
 
     </div>
