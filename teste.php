@@ -172,35 +172,22 @@
 //var_dump(getData('users')) ;
 //
 
-//class Person
-//{
-//    public function __invoke()
-//    {
-//        return 'teste';
-//    }
-//
-//}
-//
-//$person
-//
-//};
-//
-//var_dump($person);
-
-function texto($name)
+class Person
 {
-    return "Ola, tudo bem $name";
-}
-
-function texto2($callback)
-{
-    if(!is_callable($callback)){
+    public function __invoke()
+    {
+        return 'teste';
     }
-    return $callback('Emir');
+
 
 }
 
-echo texto2('texto');
+$person
+
+};
+
+var_dump($person);
+
 
 ?>
 
