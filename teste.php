@@ -172,21 +172,13 @@
 //var_dump(getData('users')) ;
 //
 
-class Person
-{
-    public function __invoke()
-    {
-        return 'teste';
-    }
+//============ SUPER GLOBAIS - COOKIE  =======
+
+setcookie('nome', 'emir', time() + 3600);
+setcookie('idade', '35', strtotime('+1 day'));
+//echo $_COOKIE['nome'];
 
 
-}
-
-$person
-
-};
-
-var_dump($person);
 
 
 ?>
