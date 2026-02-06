@@ -174,10 +174,21 @@
 
 //============ SUPER GLOBAIS - COOKIE  =======
 
-setcookie('nome', 'emir', time() + 3600);
-setcookie('idade', '35', strtotime('+1 day'));
+//setcookie('nome', 'emir', time() + 3600);
+//setcookie('idade', '35', strtotime('+1 day'));
 //echo $_COOKIE['nome'];
 
+// ====== SUPER GLOBAIS - SESSION =======
+
+session_start();
+//session_id();
+//echo 'O id da session é '.session_id();
+
+session_regenerate_id();
+require './teste2.php';
+
+$_SESSION['nome'] = 'emir';
+$_SESSION['person'] = ['name' => 'emir', 'age' => 35];
 
 
 
