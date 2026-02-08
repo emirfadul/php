@@ -172,25 +172,35 @@
 //var_dump(getData('users')) ;
 //
 
-//============ SUPER GLOBAIS - COOKIE  =======
+//class Person
+//{
+//    public function __invoke()
+//    {
+//        return 'teste';
+//    }
+//
+//}
+//
+//$person
+//
+//};
+//
+//var_dump($person);
 
-//setcookie('nome', 'emir', time() + 3600);
-//setcookie('idade', '35', strtotime('+1 day'));
-//echo $_COOKIE['nome'];
+function texto($name)
+{
+    return "Ola, tudo bem $name";
+}
 
-// ====== SUPER GLOBAIS - SESSION =======
+function texto2($callback)
+{
+    if(!is_callable($callback)){
+    }
+    return $callback('Emir');
 
-session_start();
-//session_id();
-//echo 'O id da session é '.session_id();
+}
 
-session_regenerate_id();
-require './teste2.php';
-
-$_SESSION['nome'] = 'emir';
-$_SESSION['person'] = ['name' => 'emir', 'age' => 35];
-
-
+echo texto2('texto');
 
 ?>
 
