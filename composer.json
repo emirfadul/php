@@ -2,7 +2,8 @@
     "name": "emirfadul/htdocs",
     "autoload": {
         "psr-4": {
-            "Emirfadul\\Htdocs\\": "../"
+            "Emirfadul\\Htdocs\\": "../",
+            "App\\": "src/"
         }
     },
     "authors": [
