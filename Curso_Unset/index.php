@@ -13,35 +13,31 @@
 <body>
   <h1>Curso PHP</h1>
 
-  <form action="teste.php" method="post">
-    <input type="text" name="nome" placeholder="Digite seu nome">
-    <input type="text" name="email" placeholder="Digite seu email">
-
-    <button type="submit">Enviar</button>
-
-  </form>
-
   <?php
-
   //declare(strict_types=1);
   require_once 'configuracao.php';
   echo '<br>';
   include_once 'helpers.php';
 
   $texto = 'emir fadul';
-
   $string = 'Olá, mundo!';
   $int = 10;
   $float = 10.5;
   $bool = true;
   $nulo = null;
 
-
-  var_dump($float);
-  echo '<br>';
+  //var_dump($float);
+  //echo '<br>';
   echo saudacao();
+  //echo '<br>';
+  //echo resumirTexto($texto, '50', 'continue');
+
+
+  $today = date('l');
   echo '<br>';
-  echo resumirTexto($texto, 50, 'continue');
+  echo $today;
+
+
 
 
   ?>
