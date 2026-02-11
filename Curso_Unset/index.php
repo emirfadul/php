@@ -13,34 +13,38 @@
 <body>
   <h1>Curso PHP</h1>
 
-  <?php
+  <form action="helpers.php" method="get">
+      <label for="nome">Hora em Numeral:</label>
+      <input type="text" name="hora" id="hora">
+      <input type="submit" value="Enviar">
+
+
+  </form>
+
+  <!--
+  //<?php
   //declare(strict_types=1);
-  require_once 'configuracao.php';
-  echo '<br>';
-  include_once 'helpers.php';
-
-  $texto = 'emir fadul';
-  $string = 'Olá, mundo!';
-  $int = 10;
-  $float = 10.5;
-  $bool = true;
-  $nulo = null;
-
-  //var_dump($float);
-  //echo '<br>';
-  echo saudacao();
+  //require_once 'configuracao.php';
+//  echo '<br>';
+//  include_once 'helpers.php';
+////
+////  $texto = 'emir fadul';
+////  $string = 'Olá, mundo!';
+////  $int = 10;
+////  $float = 10.5;
+////  $bool = true;
+////  $nulo = null;
+//
+//  //var_dump($float);
+//  //echo '<br>';
+//  echo saudacao();
   //echo '<br>';
   //echo resumirTexto($texto, '50', 'continue');
 
 
-  $today = date('l');
-  echo '<br>';
-  echo $today;
-
-
-
-
   ?>
+
+
 
 </body>
 
