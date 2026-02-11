@@ -11,26 +11,55 @@
 </head>
 
 <body>
-<h1>Curso PHP</h1>
+<!--<h1>Curso PHP</h1>-->
 
 
 
 <?php
 
-$hora = $_GET["hora"];
+//$hora = $_GET["hora"];
 
-if ($hora == 0 and $hora <= 5) {
-    echo 'Boa madrugada';
-} else if ($hora >= 6 and $hora <= 11) {
-    echo 'Bom dia';
-} else if ($hora >= 12 and $hora <= 17) {
-    echo 'Boa tarde';
-} else if ($hora >= 17) {
-    echo 'Boa noite';
-}
+//if ($hora == 0 and $hora <= 5) {
+//    echo 'Boa madrugada';
+//} else if ($hora >= 6 and $hora <= 11) {
+//    echo 'Bom dia';
+//} else if ($hora >= 12 and $hora <= 17) {
+//    echo 'Boa tarde';
+//} else if ($hora >= 17) {
+//    echo 'Boa noite';
+//}
+echo '</br>';
+$texto = 'emir fadoul sobreira';
+echo "O nome \"$texto\" com a funçao TRIM, possui". mb_strlen(trim($texto)). " letras.";
+echo '</br>';
+echo "O nome \"$texto\" sem a funçao TRIM, possui". mb_strlen($texto). " letras.";
+echo '</br>';
+echo 'o texto cortado é '.$corte = mb_substr($texto, 3, 10);
+echo '</br>';
+echo 'A letra R, esta na posiçáo '. $letra = mb_strrpos($texto, 'r');
 
 echo '<br/>';
 echo "<a href=\"index.php\">Voltar</a>";
+
+/**
+ * @param string $texto texto a ser criado
+ * @param int $limite valor limite de caracter
+ * @param string $continue texto ao final do resumo
+ * @return string texto resumido
+ */
+function resumirTexto($texto, $limite, $continue = '...')
+{
+    $textoLimpo = trim($texto);
+    if (mb_strlen($textoLimpo) <= $limite)
+    {
+        return $textoLimpo;
+    }
+
+    $resumirTexto = mb_substr($textoLimpo, 0, mb_strrpos(mb_substr($textoLimpo, 0, $limite), ''));
+
+    return $resumirTexto . $continue;
+
+}
 
 ?>
 

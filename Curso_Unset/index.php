@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="UTF-8">
@@ -13,22 +13,24 @@
 <body>
   <h1>Curso PHP</h1>
 
-  <form action="helpers.php" method="get">
-      <label for="nome">Hora em Numeral:</label>
-      <input type="text" name="hora" id="hora">
-      <input type="submit" value="Enviar">
+<!--  <form action="helpers.php" method="get">-->
+<!--      <label for="nome">Hora em Numeral:</label>-->
+<!--      <input type="text" name="hora" id="hora">-->
+<!--      <input type="radio" name="sexo" id="masc"  checked>-->
+<!--      <label for="masc">Masculino</label></br>-->
+<!--      <input type="radio" name="sexo" value="fem">-->
+<!--      <label for="fem">Feminino</label>-->
+<!---->
+<!--      <input type="submit" value="Enviar">-->
+<!--  </form>-->
 
-
-  </form>
-
-  <!--
-  //<?php
-  //declare(strict_types=1);
+  <?php
+//declare(strict_types=1);
   //require_once 'configuracao.php';
-//  echo '<br>';
-//  include_once 'helpers.php';
-////
-////  $texto = 'emir fadul';
+  echo '<br>';
+  include_once 'helpers.php';
+//
+
 ////  $string = 'Olá, mundo!';
 ////  $int = 10;
 ////  $float = 10.5;
@@ -40,6 +42,10 @@
 //  echo saudacao();
   //echo '<br>';
   //echo resumirTexto($texto, '50', 'continue');
+
+  $texto = strip_tags('<h1> Texto</h1> <p>para </p> <h2> resumir</h2>');
+
+  echo resumirTexto($texto, 50);
 
 
   ?>
