@@ -3,18 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Desafio 4</title>
-        <link rel="stylesheet" href="/desafio4/style.css">
+        <title>Desafio 3</title>
+        <link rel="stylesheet" href="/CursoEmVideo/desafio3ideo/desafio3/style.css">
     </head>
     <body>
         <main>
             <h1>Conversão de REAL para DOLAR</h1>
            
             <h2>Resultado</h2>
-            <form action="/desafio4/conversao.php" method="get">
-           
+            <form action="/CursoEmVideo/desafio3ideo/desafio3/resultado3.php" method="get">
+                <label for="cotacao">Cotação do Dolar</label>
+                <input type="number" name="cotacao" id="cotacao" step="0.01" placeholder="0.00">
+                
                 <label for="numero">Valor em REAL</label>
-                <input type="number" name="numero" id="numero" required>
+                <input type="number" name="reais" id="numero" required>
 
                 <input type="submit" value="Calcular">
             </form>

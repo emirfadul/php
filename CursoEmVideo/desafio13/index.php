@@ -53,10 +53,10 @@
         <p>Caixa eletronico entregará as seguintes notas:</p>
 
         <ul>
-            <li><img src="/desafio13/100.jpg" alt=""> x <?= $tot100 ?></li>
-            <li><img src="/desafio13/50.jpg" alt=""> x <?= $tot50 ?></li>
-            <li><img src="/desafio13/10.jpg" alt=""> x <?= $tot10 ?></li>
-            <li><img src="/desafio13/5.jpg" alt=""> x <?= $tot5 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/100.jpg" alt=""> x <?= $tot100 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/50.jpg" alt=""> x <?= $tot50 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/10.jpg" alt=""> x <?= $tot10 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/5.jpg" alt=""> x <?= $tot5 ?></li>
         </ul>
 
     </section>
@@ -91,10 +91,10 @@
         <p>Caixa eletronico entregará as seguintes notas:</p>
 
         <ul>
-            <li><img src="/desafio13/100.jpg" alt=""> x <?=$tot100 ?></li>
-            <li><img src="/desafio13/50.jpg" alt=""> x <?=$tot50 ?></li>
-            <li><img src="/desafio13/10.jpg" alt=""> x <?=$tot10 ?></li>
-            <li><img src="/desafio13/5.jpg" alt=""> x <?=$tot5 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/100.jpg" alt=""> x <?=$tot100 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/50.jpg" alt=""> x <?=$tot50 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/10.jpg" alt=""> x <?=$tot10 ?></li>
+            <li><img src="/CursoEmVideo/desafio13deo/desafio13/5.jpg" alt=""> x <?=$tot5 ?></li>
         </ul>       
        
     </section>

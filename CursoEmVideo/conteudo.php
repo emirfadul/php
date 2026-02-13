@@ -20,7 +20,7 @@
             <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="/desafio10/index.php">
+                <a href="/CursoEmVideo/desafio10/index.php">
                     <button class="card-button">DESAFIO 10</button>
                 </a>
                 <p>Calculando sua idade.</p>
@@ -33,7 +33,7 @@
             <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="desafio11/index.php">
+                <a href="CursoEmVideo/desafio11/index.php">
                     <button class="card-button">DESAFIO 11</button>
                 </a>
                 <p>Reajuste de preço.</p>
@@ -46,7 +46,7 @@
             <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="desafio12/index.php">
+                <a href="CursoEmVideo/desafio12/index.php">
                     <button class="card-button">DESAFIO 12</button>
                 </a>
                 <p>Calculando de Tempo.</p>
@@ -58,7 +58,7 @@
             <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="desafio13/index.php">
+                <a href="CursoEmVideo/desafio13/index.php">
                     <button class="card-button">DESAFIO 13</button>
                 </a>
                 <p>Calculando sua idade.</p>

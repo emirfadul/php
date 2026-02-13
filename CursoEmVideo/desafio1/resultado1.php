@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado 1</title>
-    <link rel="stylesheet" href="/desafio1/style.css">
+    <link rel="stylesheet" href="/CursoEmVideo/desafio1ideo/desafio1/style.css">
 </head>
 
 <body>
