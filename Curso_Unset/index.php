@@ -13,22 +13,12 @@
 <body>
 <h1>Curso PHP unset</h1>
 
-<!--  <form action="helpers.php" method="get">-->
-<!--      <label for="nome">Hora em Numeral:</label>-->
-<!--      <input type="text" name="hora" id="hora">-->
-<!--      <input type="radio" name="sexo" id="masc"  checked>-->
-<!--      <label for="masc">Masculino</label></br>-->
-<!--      <input type="radio" name="sexo" value="fem">-->
-<!--      <label for="fem">Feminino</label>-->
-<!---->
-<!--      <input type="submit" value="Enviar">-->
-<!--  </form>-->
-
 <?php
+
 //declare(strict_types=1);
 //require_once 'configuracao.php';
-echo '<br>';
-include_once 'helpers.php';
+//echo '<br>';
+//include_once 'helpers.php';
 
 //  $string = 'Olá, mundo!';
 //  $int = 10;
@@ -47,15 +37,74 @@ include_once 'helpers.php';
 //echo resumirTexto($texto, 50);
 //echo '</br>';
 
+//echo contarTempo('2025-02-12 12:05:45');
+
 date_default_timezone_set('America/Manaus');
-//$data = date('d/m/Y H:i:s');
-//echo 'Manaus, ' . $data;
-//echo '<br>';
+$data = date('d/m/Y H:i:s');
+echo 'Manaus, ' . $data;
+echo '<br>';
 
-echo contarTempo('2025-02-12 12:05:45');
+require_once 'configuracao.php';
+include_once 'helpers.php';
 
-echo "<a href=\"index.php\">Voltar</a>";
+echo slug("Adao Negro - 2022");
+echo '</br>';
+echo slug("Adao Negro - 2022");
+echo '</br>';
+echo slug("Adao Negro - 2022");
+echo '</br>';
+echo slug("Adao Negro - 2022");
+
+//echo dataAtual();
+//echo '</br>';
+//echo 'Conteudo da const SITE_NOVO é '.SITE_NOVO;
+//echo '</br>';
+//echo 'Conteudo da const SITE_ANTIGO é '.constant('SITE_ANTIGO');
+//echo '</br>';
+
+
+//var_dump(localhost());
+//var_dump($_SERVER);
+//echo '</br>';
+//echo $_SERVER['SCRIPT_FILENAME'];
+//echo '</br>';
+//echo url('/admin');
+//echo '</br>';
+////$meses = array();
+//$meses = [0 =>'janeiro',
+//          1=>'fevereiro',
+//        2=>'março'
+//        ];
+//
+//var_dump($meses);
+//echo '</br>';
+//echo $meses[1];
+//echo '</br>';
+
+
+//foreach ($meses as $chave => $valor){
+//    echo $chave. '</br>';
+//}
+
+
+
+
+
+
+
 ?>
+
+  <form action="helpers.php" method="get">
+      <label for="nome">Validaçáo de Email e URL</label>
+      <input type="text" name="email" id="email" value="digite seu email">
+      <input type="text" name="url" id="url" value="digite sua url">
+<!--      <input type="radio" name="sexo" id="masc" checked>-->
+<!--      <label for="masc">Masculino</label></br>-->
+<!--      <input type="radio" name="sexo" value="fem">-->
+<!--      <label for="fem">Feminino</label>-->
+
+      <input type="submit" value="Enviar">
+  </form>
 
 
 </body>
