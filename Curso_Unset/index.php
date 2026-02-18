@@ -44,16 +44,20 @@ $data = date('d/m/Y H:i:s');
 echo 'Manaus, ' . $data;
 echo '<br>';
 
-require_once 'configuracao.php';
+//require_once 'configuracao.php';
 include_once 'helpers.php';
 
-echo slug("£™¢£¢∞£¢∞¢∞");
-echo '</br>';
-echo slug("Adao     Negro - 2022");
-echo '</br>';
-echo slug("Adao     Negro - 2022");
-echo '</br>';
-echo slug("Adao      Negro - 2022");
+//echo slug("£™¢£¢∞£¢∞¢∞");
+//echo '</br>';
+//echo slug("Adao     Negro - 2022");
+//echo '</br>';
+//echo slug("Adao     Negro - 2022");
+//echo '</br>';
+//echo slug("Adao      Negro - 2022");
+
+echo saudacao();
+
+
 
 //echo dataAtual();
 //echo '</br>';
@@ -94,17 +98,17 @@ echo slug("Adao      Negro - 2022");
 
 ?>
 
-  <form action="helpers.php" method="get">
-      <label for="nome">Validaçáo de Email e URL</label>
-      <input type="text" name="email" id="email" value="digite seu email">
-      <input type="text" name="url" id="url" value="digite sua url">
-<!--      <input type="radio" name="sexo" id="masc" checked>-->
-<!--      <label for="masc">Masculino</label></br>-->
-<!--      <input type="radio" name="sexo" value="fem">-->
-<!--      <label for="fem">Feminino</label>-->
-
-      <input type="submit" value="Enviar">
-  </form>
+<!--  <form action="helpers.php" method="get">-->
+<!--      <label for="nome">Validaçáo de Email e URL</label>-->
+<!--      <input type="text" name="email" id="email" value="digite seu email">-->
+<!--      <input type="text" name="url" id="url" value="digite sua url">-->
+<!--<!--      <input type="radio" name="sexo" id="masc" checked>-->-->
+<!--<!--      <label for="masc">Masculino</label></br>-->-->
+<!--<!--      <input type="radio" name="sexo" value="fem">-->-->
+<!--<!--      <label for="fem">Feminino</label>-->-->
+<!---->
+<!--      <input type="submit" value="Enviar">-->
+<!--  </form>-->
 
 
 </body>
