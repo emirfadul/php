@@ -47,13 +47,13 @@ echo '<br>';
 require_once 'configuracao.php';
 include_once 'helpers.php';
 
-echo slug("Adao Negro - 2022");
+echo slug("£™¢£¢∞£¢∞¢∞");
 echo '</br>';
-echo slug("Adao Negro - 2022");
+echo slug("Adao     Negro - 2022");
 echo '</br>';
-echo slug("Adao Negro - 2022");
+echo slug("Adao     Negro - 2022");
 echo '</br>';
-echo slug("Adao Negro - 2022");
+echo slug("Adao      Negro - 2022");
 
 //echo dataAtual();
 //echo '</br>';

@@ -161,8 +161,18 @@ function dataAtual(): string
 
 function slug (string $string):string
 {
-    return $string;
+
+    $mapa ['a'] = '™£¢£™¢£¢∞£¢∞¢∞§∞¢§¶§¶§¶•¶§••§¶•¶§•';
+    $mapa['b'] = 'aaaaaaeeeeeeeeeooooooouuuuuuuu';
+
+    $slug = strtr($string, $mapa['a'], $mapa['b']);
+    $slug = strip_tags(trim($slug));
+    $slug = str_replace(' ', '-', $slug);
+    $slug = str_replace(['-----', '----','---','--'],'-', $slug);
+
+    return strtolower($slug);
 }
+
 
 echo "<a href=\"index.php\">Voltar</a>";
 
