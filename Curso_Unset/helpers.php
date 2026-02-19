@@ -203,6 +203,28 @@ function saudacao(): string
     return $saudacao;
 }
 
+function validarCPF(string $cpf): bool
+{
+    $cpf = limparNumero($cpf);
+
+    for($t = 9; $t < 11; $t++) {
+        for($d = 0, $c = 0; $c < $t; $c++) {
+            $d += $cpf[$c] * (($t + 1) - $c);
+        }
+        $d = ((10 * $d) % 11) % 10;
+        if($cpf[$c] != $d) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function limparNumero (string $numero): string
+{
+    return preg_replace('/[^0-9]/', '', $numero);
+}
+
+
 
 echo "<a href=\"index.php\">Voltar</a>";
 
