@@ -8,10 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UNSET PHP</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 <h1>Curso PHP unset</h1>
+
 
 <?php
 
@@ -53,11 +55,11 @@ include './Sistema/Nucleo/Mensagem.php';
 //echo validarCPF('347.66dsdsdss4.642-49');
 //echo limparNumero('347.664.642-49');
 
-$msg = new Mensagem();
+//$msg = new Mensagem();
+//echo $msg -> sucesso('Mensagem de sucesso') ->renderizar();
+//var_dump($msg);
 
-$msg ->texto = 'Texto de teste.';
-var_dump($msg);
-
+echo (new Mensagem())->sucesso('Mensagem de sucesso')->renderizar();
 
 
 //echo slug("£™¢£¢∞£¢∞¢∞");
