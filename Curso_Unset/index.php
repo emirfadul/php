@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UNSET PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -18,9 +18,6 @@
 <?php
 
 //declare(strict_types=1);
-//require_once 'configuracao.php';
-//echo '<br>';
-//include_once 'helpers.php';
 
 //  $string = 'Olá, mundo!';
 //  $int = 10;
@@ -46,9 +43,22 @@ $data = date('d/m/Y H:i:s');
 echo 'Manaus, ' . $data;
 echo '<br>';
 
-//require_once 'configuracao.php';
-include_once 'helpers.php';
+//require_once 'Sistema\Nucleo\configuracao.php';
+include_once './Sistema/Nucleo/helpers.php';
 include './Sistema/Nucleo/Mensagem.php';
+
+$helper = new helpers();
+echo $helper->validarCPF('23242342342342');
+
+//echo (new Mensagem())->alerta('Alerta lobo 2');
+
+//use Sistema\Nucleo\Mensagem as msg;
+// ou
+//use Sistema\Nucleo\Mensagem;
+
+//echo (new msg())->alerta('alerta lobo4');
+
+//echo (new Mensagem())->alerta('Alerta Lobo')->renderizar();
 
 //echo saudacao();
 //echo '<br>';
@@ -58,8 +68,8 @@ include './Sistema/Nucleo/Mensagem.php';
 //$msg = new Mensagem();
 //echo $msg -> sucesso('Mensagem de sucesso') ->renderizar();
 //var_dump($msg);
-
-echo (new Mensagem())->sucesso('Mensagem de sucesso')->renderizar();
+//
+//echo (new Mensagem())->sucesso('Mensagem de sucesso')->renderizar();
 
 
 //echo slug("£™¢£¢∞£¢∞¢∞");

@@ -1,9 +1,17 @@
 <?php
 
+namespace Sistema\Nucleo;
+
+
 class Mensagem
 {
     private $texto = 'Emir bonito.';
     private $css;
+
+    public function __toString()
+    {
+        return $this->renderizar();
+    }
 
     /**
      * @return mixed
