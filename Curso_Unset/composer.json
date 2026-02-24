@@ -1,0 +1,25 @@
+{
+    "name": "curso/php",
+    "description": "curso php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Sistema\\": "Sistema"
+        },
+        "files": [
+            "Sistema/configuracao.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Emir Fadul",
+            "email": "emirfadul@gmail.com",
+            "homepage": "https://www.eeffsystem.com",
+            "role": "Developer Full Stack"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1"
+    }
+}
