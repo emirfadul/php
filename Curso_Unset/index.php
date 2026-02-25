@@ -36,6 +36,8 @@ echo '<br>';
 
 require 'vendor/autoload.php';
 
+require 'rotas.php';
+
 echo SITE_NOVO;
 
 //$document = new \Bissolli\ValidadorCpfCnpj\CPF('347.664.642-49');
