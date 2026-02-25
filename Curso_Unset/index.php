@@ -36,8 +36,10 @@ echo '<br>';
 
 require 'vendor/autoload.php';
 
-$document = new \Bissolli\ValidadorCpfCnpj\CPF('347.664.642-49');
-var_dump($document->isValid());
+echo SITE_NOVO;
+
+//$document = new \Bissolli\ValidadorCpfCnpj\CPF('347.664.642-49');
+//var_dump($document->isValid());
 
 //echo SITE_NOVO;
 //echo '<br>';
