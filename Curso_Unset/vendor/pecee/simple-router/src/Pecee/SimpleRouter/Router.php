@@ -452,20 +452,20 @@ class Router
             return $this->handleException(new NotFoundHttpException($message, 403));
         }
 
-        if (count($this->request->getLoadedRoutes()) === 0) {
-
-            $rewriteUrl = $this->request->getRewriteUrl();
-
-            if ($rewriteUrl !== null) {
-                $message = sprintf('Route not found: "%s" (rewrite from: "%s")', $rewriteUrl, $this->request->getUrl()->getPath());
-            } else {
-                $message = sprintf('Route not found: "%s"', $this->request->getUrl()->getPath());
-            }
-
-            $this->debug($message);
-
-            return $this->handleException(new NotFoundHttpException($message, 404));
-        }
+//        if (count($this->request->getLoadedRoutes()) === 0) {
+//
+//            $rewriteUrl = $this->request->getRewriteUrl();
+//
+//            if ($rewriteUrl !== null) {
+//                $message = sprintf('Route not found: "%s" (rewrite from: "%s")', $rewriteUrl, $this->request->getUrl()->getPath());
+//            } else {
+//                $message = sprintf('Route not found: "%s"', $this->request->getUrl()->getPath());
+//            }
+//
+//            $this->debug($message);
+//
+//            return $this->handleException(new NotFoundHttpException($message, 404));
+//        }
 
         return null;
     }

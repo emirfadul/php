@@ -24,10 +24,10 @@
 
 //echo contarTempo('2025-02-12 12:05:45');
 
-date_default_timezone_set('America/Manaus');
-$data = date('d/m/Y H:i:s');
-echo 'Manaus, ' . $data;
-echo '<br>';
+//date_default_timezone_set('America/Manaus');
+//$data = date('d/m/Y H:i:s');
+//echo 'Manaus, ' . $data;
+//echo '<br>';
 
 //require_once './Sistema/configuracao.php';
 //include_once './Sistema/Nucleo/helpers.php';
@@ -35,10 +35,9 @@ echo '<br>';
 //include './Sistema/Nucleo/Controlador.php';
 
 require 'vendor/autoload.php';
-
 require 'rotas.php';
 
-echo SITE_NOVO;
+//echo SITE_NOVO;
 
 //$document = new \Bissolli\ValidadorCpfCnpj\CPF('347.664.642-49');
 //var_dump($document->isValid());
@@ -127,10 +126,3 @@ echo SITE_NOVO;
 //    echo $chave. '</br>';
 //}
 
-?>
-
-
-
-</body>
-
-</html>

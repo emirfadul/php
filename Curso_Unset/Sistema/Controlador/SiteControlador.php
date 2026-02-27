@@ -1,12 +1,18 @@
 <?php
 
-namespace Emirfadul\Htdocs\php\Curso_Unset\Sistema\Controlador;
+namespace Sistema\Controlador;
 
 class SiteControlador
 {
     public function index():void
     {
-        echo 'Pagina Inicial';
+        echo 'Página Inicial';
     }
 
+    public function sobre(): void
+    {
+        echo 'Página Sobre';
+    }
 }
+
+
