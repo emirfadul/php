@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Título Padrão{% endblock %}</title>
+    <!-- Adicione aqui links para CSS ou outros metadados se necessário -->
+</head>
+<body>
+    {% include 'topo.html' %}
+
+    {% block conteudo %}
+
+    {% endblock %}
+
+    {% include 'rodape.html' %}
+</body>
+</html>

@@ -8,6 +8,7 @@ use Sistema\Nucleo\helpers;
 class Template
 {
     private \Twig\Environment $twig;
+
     private function __construct(string $diretorio)
     {
         $loader = new \Twig\Loader\FilesystemLoader($diretorio);
@@ -16,24 +17,38 @@ class Template
         $this->twig->setLexer($lexer);
     }
 
-    public function renderizar(string $view, array $dados = []):string
+    public function renderizar(string $view, array $dados = []): string
     {
         return $this->twig->render($view, $dados);
     }
 
-    private function helpers():void
+    private function helpers(): void
     {
-        $this->twig->addFunction(
-            new \Twig\TwigFunction('url', function(string $url = null)
-            {
-                return Helpers::url($url);
-            })),
+        array(
             $this->twig->addFunction(
-                new \Twig\TwigFunction('resumir texto', function(string $texto, int $limite = 100){
+                new \Twig\TwigFunction('url', function
+                (string $url = null) {
+                    return helpers::url($url);
+                    }
+                )
+            ),
+            $this->twig->addFunction(
+                new \Twig\TwigFunction('saudacao', function
+                (string $texto, int $limite = 100) {
+                    return helpers::saudacao();
+                }
+                )
+            ),
+
+            $this->twig->addFunction(
+                new \Twig\TwigFunction('resumirTexto', function
+                (string $texto, int $limite = 100) {
                     return helpers::resumirTexto();
                 }
                 )
-            );
+            )
+        );
     }
+
 
 }

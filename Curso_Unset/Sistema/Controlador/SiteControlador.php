@@ -6,9 +6,9 @@ use Sistema\Nucleo\Controlador;
 
 class SiteControlador extends Controlador
 {
-    public function __construct()
+    public function __construct(string $diretorio)
     {
-        parent::__construct('template/site/views');
+        parent::__construct('templates/site/views/');
     }
 
     public function index():void
