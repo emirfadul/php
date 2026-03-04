@@ -14,8 +14,7 @@ class SiteControlador extends Controlador
     public function index():void
     {
         echo $this->template->renderizar('index.html', [
-            'titulo'=>'teste de titulo',
-            'subtitulo'=>'teste de subtitulo'
+
         ]);
     }
 

@@ -2,10 +2,14 @@
 
 use Pecee\SimpleRouter\SimpleRouter;
 
-SimpleRouter::setDefaultNamespace(defaultNamespace: 'Sistema\Controlador');
+try {
+    SimpleRouter::setDefaultNamespace(defaultNamespace: 'Sistema\Controlador');
 
-SimpleRouter::get(URL_SITE,  'SiteControlador@index');
-SimpleRouter::get(URL_SITE . 'sobre', 'SiteControlador@sobre');
+    SimpleRouter::get(SITE_NOVO,  'SiteControlador@index');
+    SimpleRouter::get(SITE_NOVO . 'sobre', 'SiteControlador@sobre');
 
-SimpleRouter::start();
+    SimpleRouter::start();
 
+}catch (\Exception $ex){
+    echo $ex->getMessage();
+}

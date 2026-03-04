@@ -2,6 +2,10 @@
 
 namespace Sistema\Nucleo;
 
+use Exception;
+use function PHPUnit\Framework\throwException;
+
+
 class helpers
 {
 
@@ -151,6 +155,11 @@ class helpers
     {
         $cpf = self::limparNumero($cpf);
 
+        if (mb_strlen($cpf) != 11 or !is_numeric($cpf))
+        {
+            throw new Exception('CPF inválido');
+        }
+
         for ($t = 9; $t < 11; $t++)
         {
             for ($d = 0, $c = 0; $c < $t; $c++) {
@@ -158,7 +167,7 @@ class helpers
             }
             $d = ((10 * $d) % 11) % 10;
             if ($cpf[$c] != $d) {
-                return false;
+                throw new Exception('CPF inválido');
             }
         }
         return true;
