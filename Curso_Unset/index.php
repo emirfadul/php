@@ -35,21 +35,22 @@
 //include './Sistema/Nucleo/Controlador.php';
 
 require 'vendor/autoload.php';
-require 'rotas.php';
-//use Sistema\Nucleo\helpers;
-//
-//try {
-//    helpers::validarCPF('12345678910');
-//}catch (\Exception $e){
-//    echo $e;
-//    echo '</br>';
-//    echo '-----';
-//    echo '</br>';
-//    echo $e->getMessage();
-//} finally {
-//    echo '</br>';
-//    echo 'finally';
-//}
+//require 'rotas.php';
+
+use Sistema\Nucleo\helpers;
+
+try {
+    helpers::validarCPF('12345678910');
+}catch (\Exception $e){
+    echo $e;
+    echo '</br>';
+    echo '-----';
+    echo '</br>';
+    echo $e->getMessage();
+} finally {
+    echo '</br>';
+    echo 'finally';
+}
 
 
 

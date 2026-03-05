@@ -9,6 +9,18 @@ use function PHPUnit\Framework\throwException;
 class helpers
 {
 
+
+    public static function redirecionar(string $url = null) :void
+    {
+        header('HTTP/1.1 302 Found');
+
+        $local = ($url ? self::url($url) : self::url());
+
+        header('Location: ' . $local);
+
+        exit();
+    }
+
     /**
      * @param string $texto texto a ser criado
      * @param int $limite valor limite de caracter
@@ -58,46 +70,45 @@ class helpers
      * valida o email digitado*
      */
 
-//$email = $_GET['email'];
-//$url = $_GET['url'];
-//if (validarEmail($email)) {
-//    echo 'email valido';
-//    echo '<br>';
-//} else {
-//    echo 'email invalido';
-//    echo '<br>';
-//};
-//
-//if (validarUrl($url)) {
-//    echo 'URL valido';
-//    echo '</br>';
-//} else {
-//    echo 'URL invalido';
-//    echo '</br>';
-//};
+    //$email = $_GET['email'];
+    //$url = $_GET['url'];
+    //if (validarEmail($email)) {
+    //    echo 'email valido';
+    //    echo '<br>';
+    //} else {
+    //    echo 'email invalido';
+    //    echo '<br>';
+    //};
+    //
+    //if (validarUrl($url)) {
+    //    echo 'URL valido';
+    //    echo '</br>';
+    //} else {
+    //    echo 'URL invalido';
+    //    echo '</br>';
+    //};
 
-    function localhost(): bool
-    {
-        $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
-        if ($servidor == 'localhost') {
-            return true;
+        public static function localhost(): bool
+        {
+            $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
+            if ($servidor == 'localhost') {
+                return true;
+            }
+            return false;
         }
-        return false;
-    }
 
 
-    function url(string $url = null): string
-    {
-        $servidor = filter_input(INPUT_SERVER, 'SERVER_NAME');
-        $ambiente = (!$servidor == 'localhost' ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
+        public static function url(?string $url = null): string
+        {
+            $ambiente = (self::localhost() ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
 
-        return $ambiente . $url;
-    }
+            return $ambiente . $url;
+        }
 
-    /**
-     * @return string
-     */
-    function dataAtual(): string
+        /**
+         * @return string
+         */
+        function dataAtual(): string
     {
         $diaMes = date('d');
         $diaSemana = date('w');
