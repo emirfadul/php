@@ -3,8 +3,6 @@
 namespace Sistema\Nucleo;
 
 use Exception;
-use function PHPUnit\Framework\throwException;
-
 
 class helpers
 {
@@ -27,7 +25,7 @@ class helpers
      * @param string $continue texto ao final do resumo
      * @return string texto resumido
      */
-    function resumirTexto($texto, $limite, $continue = '...')
+    public static function resumirTexto($texto, $limite, $continue = '...')
     {
         $textoLimpo = trim($texto);
         if (mb_strlen($textoLimpo) <= $limite) {
@@ -42,7 +40,7 @@ class helpers
      * @param string $data
      * @return string
      */
-    function contarTempo(string $data)
+    public static function contarTempo(string $data)
     {
         $agora = strtotime(date('Y-m-d H:i:s'));
         $tempo = strtotime($data);
@@ -100,7 +98,7 @@ class helpers
 
         public static function url(?string $url = null): string
         {
-            $ambiente = (self::localhost() ? URL_DESENVOLVIMENTO : URL_PRODUCAO);
+            $ambiente = (self::localhost() ? 'ok' : 'nao ok');
 
             return $ambiente . $url;
         }
@@ -108,7 +106,7 @@ class helpers
         /**
          * @return string
          */
-        function dataAtual(): string
+        public static function dataAtual(): string
     {
         $diaMes = date('d');
         $diaSemana = date('w');
@@ -124,7 +122,7 @@ class helpers
     }
 
 
-    function slug(string $string): string
+    public static function slug(string $string): string
     {
 
         $mapa ['a'] = '™£¢£™¢£¢∞£¢∞¢∞§∞¢§¶§¶§¶•¶§••§¶•¶§•';

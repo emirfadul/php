@@ -1,12 +1,7 @@
 <?php
-//echo 'Arquivo de configuração';
+const SITE_ANTIGO = 'https://www.cursounset.com';
+const SITE_NOVO = '/';  // Use '/' para root em desenvolvimento; altere para URL real em produção
 
-define('SITE_NOVO', 'https://www.unset.com');
-define('SITE_ANTIGO', 'https://www.cursounset.com');
-
-define('URL_PRODUCAO', 'https://www.google.com.br');
-define('URL_DESENVOLVIMENTO', 'http://localhost:3000');
-
-//const URL_PADRAO = 'https://www.google.com.br';
-
+const URL_PRODUCAO = 'https://www.seusite.com';  // Ajuste para o real; removi 'google.com.br' de teste
+const URL_DESENVOLVIMENTO = 'http://localhost:8888';  //
 

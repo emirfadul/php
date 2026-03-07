@@ -1,20 +1,21 @@
 <?php
 
-namespace Emirfadul\Htdocs\php\Curso_Unset\Sistema\Suporte;
+namespace Sistema\Suporte;
 
-use Twig\Lexer;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
+use Twig\TwigFunction;
 use Sistema\Nucleo\helpers;
 
 class Template
 {
-    private \Twig\Environment $twig;
+    private Environment $twig;
 
-    private function __construct(string $diretorio)
+    public function __construct(string $diretorio)
     {
-        $loader = new \Twig\Loader\FilesystemLoader($diretorio);
-        $this->twig = new \Twig\Environment($loader);
-        $lexer = new Lexer($this->twig, array($this->helpers()));
-        $this->twig->setLexer($lexer);
+        $loader = new FilesystemLoader($diretorio);
+        $this->twig = new Environment($loader);
+        $this->helpers();
     }
 
     public function renderizar(string $view, array $dados = []): string
@@ -24,31 +25,22 @@ class Template
 
     private function helpers(): void
     {
-        array(
-            $this->twig->addFunction(
-                new \Twig\TwigFunction('url', function
-                (string $url = null) {
-                    return helpers::url($url);
-                    }
-                )
-            ),
-            $this->twig->addFunction(
-                new \Twig\TwigFunction('saudacao', function
-                (string $texto, int $limite = 100) {
-                    return helpers::saudacao();
-                }
-                )
-            ),
+        $this->twig->addFunction(
+            new TwigFunction('url', function (string $url = null) {
+                return helpers::url($url);
+            })
+        );
 
-            $this->twig->addFunction(
-                new \Twig\TwigFunction('resumirTexto', function
-                (string $texto, int $limite = 100) {
-                    return helpers::resumirTexto();
-                }
-                )
-            )
+        $this->twig->addFunction(
+            new TwigFunction('saudacao', function () {
+                return helpers::saudacao();
+            })
+        );
+
+        $this->twig->addFunction(
+            new TwigFunction('resumirTexto', function (string $texto, int $limite = 100) {
+                return helpers::resumirTexto($texto, $limite);
+            })
         );
     }
-
-
 }
