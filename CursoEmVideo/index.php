@@ -26,7 +26,10 @@
     </div>
 
     <!-- <?php
-            // Inicia a sessão para manter o usuário logado
+
+    $con = Conexao::getInstancia();
+
+    // Inicia a sessão para manter o usuário logado
             session_start();
 
             // Verifica se os dados foram enviados via POST
@@ -48,6 +51,8 @@
                     echo "Usuário ou senha inválidos!";
                 }
             }
+
+
             ?> -->
 
 
