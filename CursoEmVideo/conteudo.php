@@ -17,7 +17,7 @@
 
         <!-- Card Individual -->
         <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
+            <img src="/CursoEmVideo/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
                 <a href="/CursoEmVideo/desafio10/index.php">
@@ -30,10 +30,10 @@
 
         <!-- Card Individual -->
         <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
+            <img src="/CursoEmVideo/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="CursoEmVideo/desafio11/index.php">
+                <a href="/CursoEmVideo/desafio11/index.php">
                     <button class="card-button">DESAFIO 11</button>
                 </a>
                 <p>Reajuste de preço.</p>
@@ -43,10 +43,10 @@
 
         <!-- Card Individual -->
         <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
+            <img src="/CursoEmVideo/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="CursoEmVideo/desafio12/index.php">
+                <a href="/CursoEmVideo/desafio12/index.php">
                     <button class="card-button">DESAFIO 12</button>
                 </a>
                 <p>Calculando de Tempo.</p>
@@ -55,10 +55,10 @@
         </div>
 
         <div class="card">
-            <img src="/logo_php.png" alt="Descrição da imagem" class="card-image">
+            <img src="/CursoEmVideo/logo_php.png" alt="Descrição da imagem" class="card-image">
 
             <div class="card-content">
-                <a href="CursoEmVideo/desafio13/index.php">
+                <a href="/CursoEmVideo/desafio13/index.php">
                     <button class="card-button">DESAFIO 13</button>
                 </a>
                 <p>Calculando sua idade.</p>

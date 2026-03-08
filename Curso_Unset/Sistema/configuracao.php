@@ -4,4 +4,3 @@
 //
 //const URL_PRODUCAO = 'https://www.seusite.com';  // Ajuste para o real; removi 'google.com.br' de teste
 //const URL_DESENVOLVIMENTO = 'http://localhost:8888';  //
-

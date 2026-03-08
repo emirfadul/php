@@ -1,3 +1,25 @@
+<?php
+// exemplo simples de criação de classe em PHP
+class Usuario
+{
+    private string $nome;
+
+    public function __construct(string $nome)
+    {
+        $this->nome = $nome;
+    }
+
+    public function getNome(): string
+    {
+        return $this->nome;
+    }
+}
+
+// instanciando a classe e exibindo o nome
+$user = new Usuario('Fulano');
+echo "<p>Olá, " . $user->getNome() . "!</p>";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -25,11 +47,9 @@
 
     </div>
 
-    <!-- <?php
+    <?php
 
-    $con = Conexao::getInstancia();
-
-    // Inicia a sessão para manter o usuário logado
+            // Inicia a sessão para manter o usuário logado
             session_start();
 
             // Verifica se os dados foram enviados via POST
@@ -44,7 +64,7 @@
 
                 if ($usuario_correto == $usuario && $senha_correta == $senha) {
                     echo 'emir';
-                    header("Location: conteudo.html");
+                    header("Location: conteudo.php");
                     exit;
                 } else {
                     // Erro: Redireciona de volta com uma mensagem
@@ -53,7 +73,7 @@
             }
 
 
-            ?> -->
+    ?>
 
 
 </body>
