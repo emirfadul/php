@@ -7,18 +7,15 @@ class Caneta
     protected $tampada;
     protected $carga;
 
-    //=========== CONSTRUTOR =============
-    // public function __construct($m, $c, $p)
-    // {
-    //     $this->modelo = $m;
-    //     $this->cor = $c;
-    //     $this->ponta = $p;
-    //     $this->tampada = true;
-
-    //     setModelo($m);
-    //     setCor($c);
-    //     setPonta($p);
-    // }
+    //=========== CONSTRUCTOR =============
+    public function __construct($m, $c, $p, $cr)
+    {
+        $this->modelo = $m;
+        $this->cor = $c;
+        $this->ponta = $p;
+        $this->carga = $cr;
+        $this->tampada = true;
+    }
 
     // ============= GETTERS E SETTERS =============
     public function getModelo()
@@ -92,11 +89,7 @@ class Caneta
 
     public function tampar()
     {
-        if ($this->tampada == true) {
-            echo 'Caneta já está tampada.';
-        } else {
-            echo 'Caneta tampada.';
-        }
+        $this->tampada == true;
     }
 
     public function destambar()

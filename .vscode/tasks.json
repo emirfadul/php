@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build shop.sql",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"/Users/emirfadul/Library/Mobile Documents/com~apple~CloudDocs/PHP/htdocs/master_midia/loja/shop.sql/shop.sql.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compila o shop.sql projeto SQL"
+		},
+		{
+			"label": "sqlproj: Build loja",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"/Users/emirfadul/Library/Mobile Documents/com~apple~CloudDocs/PHP/htdocs/master_midia/loja/shop.sql/loja/loja.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Compila o loja projeto SQL"
+		}
+	]
+}

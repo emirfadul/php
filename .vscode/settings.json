@@ -1,4 +1,13 @@
 {
     "DockerRun.DisableAutoGenerateConfig": true,
-    "java.dependency.syncWithFolderExplorer": false
+    "java.dependency.syncWithFolderExplorer": false,
+    "dataworkspace.excludedProjects": [
+        "master_midia/loja/shop.sql/shop.sql.sqlproj",
+        "master_midia/loja/shop.sql/loja/loja.sqlproj",
+        "master_midia/loja/shop.sql/loja/shop.sql.sqlproj"
+    ],
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        ".fantomasignore": "ignore"
+    }
 }
