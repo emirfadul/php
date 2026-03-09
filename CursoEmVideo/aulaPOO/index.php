@@ -10,26 +10,43 @@
 <body>
     <pre>
     <?php
-
     require_once 'Caneta.php';
 
-    $c1 = new Caneta;
-    $c1->modelo = "BIC Cristal";
-    $c1->cor = "Azul";
-    // $c1->ponta = 0.5;
+    $c1 = new Caneta("BIC", "Azul", 0.5);
+
+    // $c1->modelo = "BIC Cristal";
+
+    $c1->setModelo("BIC Cristal");
+    $c1->setCor("Azul");
+    $c1->setPonta(0.5);
+    $c1->setTampada(true);
+    $c1->setCarga(80);
+
+    print_r($c1);
+
+
+    // echo 'Modelo: ' . $c1->getModelo() . "\n";
+    // echo 'Cor: ' . $c1->getCor() . "\n";
+    // echo 'Ponta: ' . $c1->getPonta() . "\n";
+
+
+    // echo $c1->getModelo();
+    // echo $c1->getCor();
+    // echo $c1->getPonta();
+
     // $c1->carga = 80;
     // $c1->tampada = true;
 
-    // $c1->tampar();
+    // $c1->tampar();s
 
-    print_r($c1);
-    $c1->rabiscar();
 
-    echo '<br>';
-
-    $c1->tampar();
+    // $c1->rabiscar();
 
     // echo '<br>';
+
+    // $c1->tampar();
+
+    // // echo '<br>';
 
 
     // $c2 = new Caneta;
