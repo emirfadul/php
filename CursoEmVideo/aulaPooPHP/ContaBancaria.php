@@ -85,6 +85,8 @@ class ContaBancaria
     {
         $this->setSaldo(0);
         $this->setStatus(false);
+        echo 'Conta criada com sucesso!';
+        echo '<br>';
     }
 
     // =========== Getters e Setters =================

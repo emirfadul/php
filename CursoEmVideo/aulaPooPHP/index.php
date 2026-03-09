@@ -12,23 +12,42 @@
     <?php
     require_once 'ContaBancaria.php';
 
+    echo '======== Jubileu ========';
+    echo '<br>';
+    $p1 = new ContaBancaria();
+    $p1->abrirConta("CC");
+    $p1->setDono("Jubileu");
+    $p1->setNumConta(111);
+
+    echo date('Y-m-d H:i:s') . ' - ' . $p1->depositar(300);
+    echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(100);
+    echo date('Y-m-d H:i:s') . ' - ' . $p1->pagarMensal();
+    echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(238);
+    echo date('Y-m-d H:i:s') . ' - ' . $p1->fecharConta();
+    print_r($p1);
+
+
+    echo '======== Creuza ========';
+    echo '<br>';
+    $p2 = new ContaBancaria();
+    $p2->abrirConta("CP");
+    $p2->setDono("Creuza");
+    $p2->setNumConta(222);
+
+    echo date('Y-m-d H:i:s') . ' - ' . $p2->depositar(500);
+    echo date('Y-m-d H:i:s') . ' - ' . $p2->sacar(100);
+    echo date('Y-m-d H:i:s') . ' - ' . $p2->pagarMensal();
+    echo date('Y-m-d H:i:s') . ' - ' . $p2->sacar(530);
+    echo date('Y-m-d H:i:s') . ' - ' . $p2->fecharConta();
+    print_r($p2);
+
+
+
     // $c1 = new Caneta("BIC Cristal", "Azul", 0.5, 80);
     // print_r($c1);
 
     // $c2 = new Caneta("Amarock", "Vermelha", 0.7, 60);
     // print_r($c2);
-
-    $conta = new ContaBancaria();
-
-    $conta->abrirConta("CC");
-    $conta->setDono("Emir");
-    $conta->depositar(100);
-    $conta->pagarMensal();
-    $conta->sacar(50);
-    $conta->fecharConta();
-    $conta->getSaldo();
-
-
 
     // $c1->modelo = "BIC Cristal";
     // $c1->setModelo("BIC Cristal");
