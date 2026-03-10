@@ -12,36 +12,47 @@
     <pre>
     <?php
     date_default_timezone_set('America/Manaus');
-    require_once 'ContaBancaria.php';
+    // require_once 'ContaBancaria.php';
+    require_once 'Controlador.php';
+    require_once 'ControleRemoto.php';
 
-    echo '======== Jubileu ========';
+    $controle = new ControleRemoto();
+    $controle->ligar();
+    $controle->aumentarVolume();
+    $controle->abrirMenu();
+
+    echo '======== Controle Remoto ========';
     echo '<br>';
-    $p1 = new ContaBancaria();
-    $p1->abrirConta("CC");
-    $p1->setDono("Jubileu");
-    $p1->setNumConta(111);
+    print_r($controle);
 
-    echo date('Y-m-d H:i:s') . ' - ' . $p1->depositar(300);
-    echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(100);
-    echo date('Y-m-d H:i:s') . ' - ' . $p1->pagarMensal();
-    echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(230);
-    echo date('Y-m-d H:i:s') . ' - ' . $p1->fecharConta();
-    print_r($p1);
+    // echo '======== Jubileu ========';
+    // echo '<br>';
+    // $p1 = new ContaBancaria();
+    // $p1->abrirConta("CC");
+    // $p1->setDono("Jubileu");
+    // $p1->setNumConta(111);
+
+    // echo date('Y-m-d H:i:s') . ' - ' . $p1->depositar(300);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(100);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p1->pagarMensal();
+    // echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(230);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p1->fecharConta();
+    // print_r($p1);
 
 
-    echo '======== Creuza ========';
-    echo '<br>';
-    $p2 = new ContaBancaria();
-    $p2->abrirConta("CP");
-    $p2->setDono("Creuza");
-    $p2->setNumConta(222);
+    // echo '======== Creuza ========';
+    // echo '<br>';
+    // $p2 = new ContaBancaria();
+    // $p2->abrirConta("CP");
+    // $p2->setDono("Creuza");
+    // $p2->setNumConta(222);
 
-    echo date('Y-m-d H:i:s') . ' - ' . $p2->depositar(500);
-    echo date('Y-m-d H:i:s') . ' - ' . $p2->sacar(100);
-    echo date('Y-m-d H:i:s') . ' - ' . $p2->pagarMensal();
-    echo date('Y-m-d H:i:s') . ' - ' . $p2->sacar(530);
-    echo date('Y-m-d H:i:s') . ' - ' . $p2->fecharConta();
-    print_r($p2);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p2->depositar(500);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p2->sacar(100);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p2->pagarMensal();
+    // echo date('Y-m-d H:i:s') . ' - ' . $p2->sacar(530);
+    // echo date('Y-m-d H:i:s') . ' - ' . $p2->fecharConta();
+    // print_r($p2);
 
 
 

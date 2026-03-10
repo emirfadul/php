@@ -9,5 +9,9 @@
     "files.associations": {
         "*.dbclient-js": "javascript",
         ".fantomasignore": "ignore"
+    },
+    "files.defaultLanguage": "php",
+    "files.associations": {
+        "*.php": "php"
     }
 }
