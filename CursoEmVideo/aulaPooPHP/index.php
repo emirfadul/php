@@ -24,7 +24,7 @@
     echo date('Y-m-d H:i:s') . ' - ' . $p1->depositar(300);
     echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(100);
     echo date('Y-m-d H:i:s') . ' - ' . $p1->pagarMensal();
-    echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(238);
+    echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(200);
     echo date('Y-m-d H:i:s') . ' - ' . $p1->fecharConta();
     print_r($p1);
 
