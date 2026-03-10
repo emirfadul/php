@@ -9,28 +9,18 @@
 </head>
 
 <body>
+    <h1>Projeto Controle Remoto</h1>
     <pre>
     <?php
     date_default_timezone_set('America/Manaus');
-    // require_once 'ContaBancaria.php';
-    require_once 'Controlador.php';
-    require_once 'ControleRemoto.php';
+    require_once 'ContaBancaria.php';
 
-    $controle = new ControleRemoto();
-    $controle->ligar();
-    $controle->aumentarVolume();
-    $controle->abrirMenu();
-
-    echo '======== Controle Remoto ========';
+    echo '======== Jubileu ========';
     echo '<br>';
-    print_r($controle);
-
-    // echo '======== Jubileu ========';
-    // echo '<br>';
-    // $p1 = new ContaBancaria();
-    // $p1->abrirConta("CC");
-    // $p1->setDono("Jubileu");
-    // $p1->setNumConta(111);
+    $p1 = new ContaBancaria();
+    $p1->abrirConta("CC");
+    $p1->setDono("Jubileu");
+    $p1->setNumConta(111);
 
     // echo date('Y-m-d H:i:s') . ' - ' . $p1->depositar(300);
     // echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(100);
