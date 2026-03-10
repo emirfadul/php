@@ -9,6 +9,6 @@ interface Controlador
     public function fecharMenu();
     public function play();
     public function pause();
-    public function ligarMudo();
+  public function ligarMudo();
     public function desligarMudo();
 }
