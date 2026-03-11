@@ -1,8 +1,6 @@
 <?php
 
-require_once 'Controlador.php';
-
-class Lutador implements Controlador
+class Lutador
 {
     //Atributos
     private $nome;
@@ -16,20 +14,19 @@ class Lutador implements Controlador
     private $empates;
 
     //Métodos Públicos
-    public function apresentar()
+    function apresentar()
     {
-
-        echo "Nome: " . $this->getNome() . "<br>";
-        echo "Nacionalidade: " . $this->getNacionalidade() . "<br>";
-        echo "Idade: " . $this->getIdade() . " anos<br>";
-        echo "Altura: " . $this->getAltura() . " m<br>";
-        echo "Peso: " . $this->getPeso() . " kg<br>";
-        echo "Vitórias: " . $this->getVitorias() . "<br>";
-        echo "Derrotas: " . $this->getDerrotas() . "<br>";
-        echo "Empates: " . $this->getEmpates() . "<br>";
+        echo " Nome: " . $this->getNome() . "<br>";
+        echo " Nacionalidade: " . $this->getNacionalidade() . "<br>";
+        echo " Idade: " . $this->getIdade() . " anos<br>";
+        echo " Altura: " . $this->getAltura() . " m<br>";
+        echo " Peso: " . $this->getPeso() . " kg<br>";
+        echo " Vitórias: " . $this->getVitorias() . "<br>";
+        echo " Derrotas: " . $this->getDerrotas() . "<br>";
+        echo " Empates: " . $this->getEmpates() . "<br>";
     }
 
-    public function status()
+    function status()
     {
         echo "<p>" . $this->getNome() . " é um peso " . $this->getCategoria();
         echo ", com " . $this->getVitorias() . " vitórias, ";
@@ -37,45 +34,40 @@ class Lutador implements Controlador
         echo $this->getEmpates() . " empates.</p>";
     }
 
-    public function ganharLuta()
+    function ganharLuta()
     {
         $this->setVitorias($this->getVitorias() + 1);
     }
 
-    public function perderLuta()
+    function perderLuta()
     {
         $this->setDerrotas($this->getDerrotas() + 1);
     }
 
-    public function empatarLuta()
+    function empatarLuta()
     {
         $this->setEmpates($this->getEmpates() + 1);
     }
 
     //Métodos Especiais
-    public function __construct($nome, $nacionalidade, $idade, $altura, $peso, $vitorias, $derrotas, $empates)
+    public function __construct($no, $na, $id, $al, $pe, $vi, $de, $em)
     {
-        $this->nome = $nome;
-        $this->nacionalidade = $nacionalidade;
-        $this->idade = $idade;
-        $this->altura = $altura;
-        $this->setPeso($peso);
-        $this->vitorias = $vitorias;
-        $this->derrotas = $derrotas;
-        $this->empates = $empates;
+        $this->nome = $no;
+        $this->nacionalidade = $na;
+        $this->idade = $id;
+        $this->altura = $al;
+        $this->setPeso($pe);
+        $this->vitorias = $vi;
+        $this->derrotas = $de;
+        $this->empates = $em;
     }
 
-    /**
-     * Get the value of nome
-     */
+    //Getters e Setters
     private function getNome()
     {
         return $this->nome;
     }
 
-    /**
-     * Set the value of nome
-     */
     private function setNome($nome): self
     {
         $this->nome = $nome;
@@ -83,17 +75,11 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of nacionalidade
-     */
     private function getNacionalidade()
     {
         return $this->nacionalidade;
     }
 
-    /**
-     * Set the value of nacionalidade
-     */
     private function setNacionalidade($nacionalidade): self
     {
         $this->nacionalidade = $nacionalidade;
@@ -101,17 +87,12 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of idade
-     */
+
     private function getIdade()
     {
         return $this->idade;
     }
 
-    /**
-     * Set the value of idade
-     */
     private function setIdade($idade): self
     {
         $this->idade = $idade;
@@ -119,17 +100,11 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of altura
-     */
     private function getAltura()
     {
         return $this->altura;
     }
 
-    /**
-     * Set the value of altura
-     */
     private function setAltura($altura): self
     {
         $this->altura = $altura;
@@ -137,17 +112,11 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of peso
-     */
     private function getPeso()
     {
         return $this->peso;
     }
 
-    /**
-     * Set the value of peso
-     */
     private function setPeso($peso): self
     {
         $this->peso = $peso;
@@ -155,17 +124,11 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of categoria
-     */
     private function getCategoria()
     {
         return $this->categoria;
     }
 
-    /**
-     * Set the value of categoria
-     */
     private function setCategoria(): self
     {
         if ($this->peso < 52.2) {
@@ -182,17 +145,11 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of vitorias
-     */
     private function getVitorias()
     {
         return $this->vitorias;
     }
 
-    /**
-     * Set the value of vitorias
-     */
     private function setVitorias($vitorias): self
     {
         $this->vitorias = $vitorias;
@@ -200,17 +157,12 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of derrotas
-     */
     private function getDerrotas()
     {
         return $this->derrotas;
     }
 
-    /**
-     * Set the value of derrotas
-     */
+
     private function setDerrotas($derrotas): self
     {
         $this->derrotas = $derrotas;
@@ -218,17 +170,11 @@ class Lutador implements Controlador
         return $this;
     }
 
-    /**
-     * Get the value of empates
-     */
     private function getEmpates()
     {
         return $this->empates;
     }
 
-    /**
-     * Set the value of empates
-     */
     private function setEmpates($empates): self
     {
         $this->empates = $empates;

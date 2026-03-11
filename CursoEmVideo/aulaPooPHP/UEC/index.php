@@ -23,7 +23,7 @@
                 require_once 'Lutador.php';
                 $lutador1 = new Lutador("Pretty_Boy", "França", 31, 1.75, 68, 11, 11, 2, 1);
                 $lutador1->apresentar();
-                // $lutador1->status();
+                $lutador1->status();
                 ?>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 require_once 'Lutador.php';
                 $lutador2 = new Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3, 1);
                 $lutador2->apresentar();
-                // $lutador2->status();
+                $lutador2->status();
                 ?>
             </div>
         </div>
@@ -49,7 +49,7 @@
                 require_once 'Lutador.php';
                 $lutador3 = new Lutador("Snapshadow", "EUA", 35, 1.65, 80.9, 12, 2, 1, 1);
                 $lutador3->apresentar();
-                // $lutador3->status();
+                $lutador3->status();
                 ?>
             </div>
         </div>
@@ -62,7 +62,7 @@
                 require_once 'Lutador.php';
                 $lutador4 = new Lutador("Dead Code", "Austrália", 28, 1.93, 81.6, 13, 0, 2, 1);
                 $lutador4->apresentar();
-                // $lutador4->status();
+                $lutador4->status();
                 ?>
             </div>
         </div>
@@ -75,7 +75,7 @@
                 require_once 'Lutador.php';
                 $lutador5 = new Lutador("UFOCobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3, 1);
                 $lutador5->apresentar();
-                // $lutador5->status();
+                $lutador5->status();
                 ?>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 require_once 'Lutador.php';
                 $lutador6 = new Lutador("Nerdaart", "EUA", 30, 1.81, 105.7, 12, 2, 4, 1);
                 $lutador6->apresentar();
-                // $lutador6->status();
+                $lutador6->status();
                 ?>
             </div>
         </div>
@@ -97,39 +97,37 @@
 
 
 
-    <!-- <pre>
+    <pre>
     <?php
     date_default_timezone_set('America/Manaus');
     require_once 'Lutador.php';
 
-    $lutador1 = new Lutador("Pretty_Boy", "França", 31, 1.75, 68, 11, 11, 2, 1);
-    $lutador1->apresentar();
-    $lutador1->status();
+    $l = array();
+    $l[0] = new Lutador("Pretty_Boy", "França", 31, 1.75, 68, 11, 11, 2, 1);
+    $l[1] = new Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3, 1);
+    $l[2] = new Lutador("Snapshadow", "EUA", 35, 1.65, 80.9, 12, 2, 1, 1);
+    $l[3] = new Lutador("Dead Code", "Austrália", 28, 1.93, 81.6, 13, 0, 2, 1);
+    $l[4] = new Lutador("UFOCobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3, 1);
+    $l[5] = new Lutador("Nerdaart", "EUA", 30, 1.81, 105.7, 12, 2, 4, 1);
 
-    $lutador2 = new Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3, 1);
-    $lutador2->apresentar();
-    $lutador2->status();
 
-    $lutador3 = new Lutador("Snapshadow", "EUA", 35, 1.65, 80.9, 12, 2, 1, 1);
-    $lutador3->apresentar();
-    $lutador3->status();
-
-    $lutador4 = new Lutador("Dead Code", "Austrália", 28, 1.93, 81.6, 13, 0, 2, 1);
-    $lutador4->apresentar();
-    $lutador4->status();
-
-    $lutador5 = new Lutador("UFOCobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3, 1);
-    $lutador5->apresentar();
-    $lutador5->status();
-
-    $lutador6 = new Lutador("Nerdaart", "EUA", 30, 1.81, 105.7, 12, 2, 4, 1);
-    $lutador6->apresentar();
-    $lutador6->status();
+    $l[0]->apresentar();
+    $l[0]->status();
+    echo "<hr>";
+    $l[1]->apresentar();
+    echo "<hr>";
+    $l[2]->apresentar();
+    echo "<hr>";
+    $l[3]->apresentar();
+    echo "<hr>";
+    $l[4]->apresentar();
+    echo "<hr>";
+    $l[5]->apresentar();
 
 
 
     ?>
-    </pre> -->
+    </pre>
 
 </body>
 
