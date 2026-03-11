@@ -9,18 +9,20 @@
 </head>
 
 <body>
-    <h1>Projeto Controle Remoto</h1>
+    <h1>UEC</h1>
+
     <pre>
     <?php
     date_default_timezone_set('America/Manaus');
-    require_once 'ContaBancaria.php';
+    require_once 'Lutador.php';
 
-    echo '======== Jubileu ========';
-    echo '<br>';
-    $p1 = new ContaBancaria();
-    $p1->abrirConta("CC");
-    $p1->setDono("Jubileu");
-    $p1->setNumConta(111);
+
+    $l = new Lutador("Fernando", "Brasil", 30, 1.80, 80, 10, 5, 2);
+
+    $l->apresentar();
+    $l->status();
+    $l->setPeso(80.5);
+
 
     // echo date('Y-m-d H:i:s') . ' - ' . $p1->depositar(300);
     // echo date('Y-m-d H:i:s') . ' - ' . $p1->sacar(100);

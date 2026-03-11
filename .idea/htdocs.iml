@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/site/src" isTestSource="false" packagePrefix="Emirfadul\Htdocs\" />
       <sourceFolder url="file://$MODULE_DIR$/site/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Curso_Unset/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Curso_Unset/Sistema" isTestSource="false" packagePrefix="Sistema\" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/site/vendor/composer" />

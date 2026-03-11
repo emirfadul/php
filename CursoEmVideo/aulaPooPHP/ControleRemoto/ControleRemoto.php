@@ -31,7 +31,9 @@ class ControleRemoto implements Controlador
     public function aumentarVolume()
     {
         if ($this->getLigado()) {
-            $this->setVolume($this->getVolume() + 3);
+            $this->setVolume($this->getVolume() + 10);
+        } else {
+            echo "ERRO: TV está desligada, não é possível aumentar o volume.\n";
         }
     }
 
@@ -44,19 +46,15 @@ class ControleRemoto implements Controlador
 
     public function abrirMenu()
     {
-        if ($this->ligado) {
-            echo "-------- MENU --------\n";
-            echo "Está ligado? " . ($this->getLigado() ? "Sim" : "Não") . "\n";
-            echo "Está tocando? " . ($this->tocando ? "Sim" : "Não") . "\n";
-            echo "Volume: " . $this->getVolume();
-            for ($i = 0; $i < $this->volume; $i += 10) {
-                echo "|";
-            }
-            echo "\n----------------\n";
-            echo '<br>';
-        } else {
-            echo "TV está desligada, não posso abrir o menu.\n";
+
+        echo "-------- MENU --------\n";
+        echo "Está ligado? " . ($this->getLigado() ? "Sim" : "Não") . "\n";
+        echo "Está tocando? " . ($this->tocando ? "Sim" : "Não") . "\n";
+        echo "Volume: " . $this->getVolume();
+        for ($i = 0; $i < $this->volume; $i += 10) {
+            echo "|";
         }
+        echo "\n----------------\n";
     }
 
     public function fecharMenu()
@@ -101,7 +99,7 @@ class ControleRemoto implements Controlador
     /**
      * Get the value of volume
      */
-    public function getVolume()
+    private function getVolume()
     {
         return $this->volume;
     }
@@ -109,7 +107,7 @@ class ControleRemoto implements Controlador
     /**
      * Set the value of volume
      */
-    public function setVolume($volume): self
+    private function setVolume($volume): self
     {
         $this->volume = $volume;
 
@@ -119,7 +117,7 @@ class ControleRemoto implements Controlador
     /**
      * Get the value of ligado
      */
-    public function getLigado()
+    private function getLigado()
     {
         return $this->ligado;
     }
@@ -127,7 +125,7 @@ class ControleRemoto implements Controlador
     /**
      * Set the value of ligado
      */
-    public function setLigado($ligado): self
+    private function setLigado($ligado): self
     {
         $this->ligado = $ligado;
 
@@ -137,7 +135,7 @@ class ControleRemoto implements Controlador
     /**
      * Get the value of tocando
      */
-    public function getTocando()
+    private function getTocando()
     {
         return $this->tocando;
     }
@@ -145,7 +143,7 @@ class ControleRemoto implements Controlador
     /**
      * Set the value of tocando
      */
-    public function setTocando($tocando): self
+    private function setTocando($tocando): self
     {
         $this->tocando = $tocando;
 
