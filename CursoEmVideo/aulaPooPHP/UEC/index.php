@@ -104,6 +104,7 @@
     echo "<hr>";
     date_default_timezone_set('America/Manaus');
     require_once 'Lutador.php';
+    require_once 'Luta.php';
 
     $l = array();
     $l[0] = new Lutador("Pretty_Boy", "França", 31, 1.75, 68, 11, 11, 2, 1);
@@ -126,6 +127,13 @@
     $l[4]->apresentar();
     echo "<hr>";
     $l[5]->apresentar();
+
+    $uec01 = new Luta();
+    $uec01->marcarLuta($l[0], $l[1]);
+    // $uec01->lutarutar();
+
+    print_r($uec01);
+    
 
 
 

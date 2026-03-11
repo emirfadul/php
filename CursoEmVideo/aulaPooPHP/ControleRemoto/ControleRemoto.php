@@ -31,9 +31,7 @@ class ControleRemoto implements Controlador
     public function aumentarVolume()
     {
         if ($this->getLigado()) {
-            $this->setVolume($this->getVolume() + 10);
-        } else {
-            echo "ERRO: TV está desligada, não é possível aumentar o volume.\n";
+            $this->setVolume($this->getVolume() + 3);
         }
     }
 
@@ -46,15 +44,19 @@ class ControleRemoto implements Controlador
 
     public function abrirMenu()
     {
-
+        
         echo "-------- MENU --------\n";
         echo "Está ligado? " . ($this->getLigado() ? "Sim" : "Não") . "\n";
-        echo "Está tocando? " . ($this->tocando ? "Sim" : "Não") . "\n";
+        echo "Está tocando? " . ($this->getTocando() ? "Sim" : "Não") . "\n";
         echo "Volume: " . $this->getVolume();
         for ($i = 0; $i < $this->volume; $i += 10) {
             echo "|";
         }
         echo "\n----------------\n";
+        echo '<br>';
+    
+        //  echo "TV está desligada, não posso abrir o menu.\n";
+        
     }
 
     public function fecharMenu()
@@ -77,6 +79,7 @@ class ControleRemoto implements Controlador
     {
         if ($this->getLigado() && $this->getTocando()) {
             $this->setTocando(false);
+            
         }
     }
 
