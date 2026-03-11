@@ -16,7 +16,7 @@
     <div class="container text-center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
         <div class="card" style="width: 18rem;">
-            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador1.jpeg" class="card-img-top" alt="lutador1">
+            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador1.jpeg" class="card-img-top" height="300px" alt="lutador1">
             <div class="card-body">
                 <?php
                 date_default_timezone_set('America/Manaus');
@@ -29,7 +29,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador2.jpeg" class="card-img-top" alt="lutador1">
+            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador2.jpeg" class="card-img-top" height="300px" alt="lutador1">
             <div class="card-body">
                 <?php
                 date_default_timezone_set('America/Manaus');
@@ -42,7 +42,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador4.jpeg" class="card-img-top" alt="lutador1">
+            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador4.jpeg" class="card-img-top" height="300px" alt="lutador1">
             <div class="card-body">
                 <?php
                 date_default_timezone_set('America/Manaus');
@@ -55,7 +55,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador4.jpeg" class="card-img-top" alt="lutador1">
+            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador4.jpeg" class="card-img-top" height="300px" alt="lutador1">
             <div class="card-body">
                 <?php
                 date_default_timezone_set('America/Manaus');
@@ -68,7 +68,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador5.jpeg" class="card-img-top" alt="lutador1">
+            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador5.jpeg" class="card-img-top" height="300px" alt="lutador1">
             <div class="card-body">
                 <?php
                 date_default_timezone_set('America/Manaus');
@@ -81,7 +81,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador5.jpeg" class="card-img-top" alt="lutador1">
+            <img src="/CursoEmVideo/aulaPooPHP/UEC/lutador5.jpeg" class="card-img-top" height="300px" alt="lutador1">
             <div class="card-body">
                 <?php
                 date_default_timezone_set('America/Manaus');
