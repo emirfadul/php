@@ -99,6 +99,9 @@
 
     <pre>
     <?php
+
+    echo '========== Outra forma de mostrar os dados dos lutadores ==========';
+    echo "<hr>";
     date_default_timezone_set('America/Manaus');
     require_once 'Lutador.php';
 
