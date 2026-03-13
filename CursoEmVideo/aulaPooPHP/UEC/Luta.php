@@ -11,7 +11,7 @@ class Luta
         if ($l1->getCategoria() === $l2->getCategoria() && $l1 != $l2) {
             $this->setDesafiado($l1);
             $this->setDesafiante($l2);
-            $this->setLutas(true);
+            $this->setAprovada(true);
         } else {
             $this->setLutas(false);
             $this->setDesafiado(null);
@@ -46,9 +46,6 @@ class Luta
             echo "<p>A luta não pode acontecer!</p>";
         }
     }
-
-    //Métodos Especiais
-    public function __construct() {}
 
     //Getters e Setters
     private function getDesafiado()
@@ -95,6 +92,23 @@ class Luta
     {
         $this->aprovada = $lutas;
 
+        return $this;  
+    }
+
+    public function getAprovada()
+    {
+        return $this->aprovada;
+    }
+
+    public function setAprovada($aprovada): self
+    {
+        $this->aprovada = $aprovada;
+
         return $this;
     }
+
+
+
+     
 }
+

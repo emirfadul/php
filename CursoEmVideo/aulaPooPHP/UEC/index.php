@@ -128,14 +128,12 @@
     echo "<hr>";
     $l[5]->apresentar();
 
-    $uec01 = new Luta();
-    $uec01->marcarLuta($l[0], $l[1]);
-    // $uec01->lutarutar();
+    echo '======== LUTA ========';
+    $UEC01 = new Luta();
+    $UEC01->marcarLuta($l[0], $l[1]);
+    $UEC01->lutar();
 
-    print_r($uec01);
-    
-
-
+   
 
     ?>
     </pre>
